@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Font Reader</h1>
+    <div class="file-upload">
+        <input type="file" id="fontFile" accept=".ttf">
+        <label for="fontFile">Choose font (ONLY-TTF)</label>
+    </div>
+    <button id="applyButton">Apply</button>
+    <div id="fontSample">The quick fox jumps over the lazy dog</div>
+    <div id="characterSamples">
+        <h2>Characters</h2>
+        <div class="sample-group">
+            <h3>Letters</h3>
+            <div class="sample" id="alphabetSample">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+            <div class="sample" id="lowercaseAlphabetSample">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+        </div>
+        <div class="sample-group">
+            <h3>Symbols</h3>
+            <div class="sample" id="symbolSample">! @ # $ % ^ & * ( ) _ + - = { } [ ] | \ : " ; ' &lt; &gt; , . ? /</div>
+        </div>
+        <div class="sample-group">
+            <h3>Numbers</h3>
+            <div class="sample" id="numberSample">0 1 2 3 4 5 6 7 8 9</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
